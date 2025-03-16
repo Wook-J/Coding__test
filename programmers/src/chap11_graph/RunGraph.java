@@ -6,13 +6,22 @@ public class RunGraph {
 
 	public static void main(String[] args) {
 		
-		Prob41_경주로_건설 prob41 = new Prob41_경주로_건설();
+		Prob42_전력망을_둘로_나누기 prob42 = new Prob42_전력망을_둘로_나누기();
+		int[][] wires1 = {{1, 3}, {2, 3}, {3, 4}, {4, 5}, {4, 6}, {4, 7}, {7, 8}, {7, 9}};
+		int[][] wires2 = {{1, 2}, {2, 3}, {3, 4}};
+		int[][] wires3 = {{1, 2}, {2, 7}, {3, 7}, {3, 4}, {4, 5}, {6, 7}};
 		
-		int[][] board1 = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
-		int[][] board2 = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 1, 0, 1}, {1, 0, 0, 0}};
+		System.out.println(prob42.solution(9, wires1));
+		System.out.println(prob42.solution(4, wires2));
+		System.out.println(prob42.solution(7, wires3));
 		
-		System.out.println(prob41.solution(board1));
-		System.out.println(prob41.solution(board2));
+//		Prob41_경주로_건설 prob41 = new Prob41_경주로_건설();
+//		
+//		int[][] board1 = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+//		int[][] board2 = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 1, 0, 1}, {1, 0, 0, 0}};
+//		
+//		System.out.println(prob41.solution(board1));
+//		System.out.println(prob41.solution(board2));
 		
 //		Prob40_배달 prob40 = new Prob40_배달();
 //		
