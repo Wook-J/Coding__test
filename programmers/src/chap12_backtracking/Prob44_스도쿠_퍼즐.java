@@ -25,7 +25,6 @@ public class Prob44_스도쿠_퍼즐 {
 	
 	public boolean findSolution() {
 		Block emptyPos = findEmptyPosition();
-		
 		// 빈칸이 없으면 스도쿠가 해결된 것으로 간주
 		if(emptyPos == null) return true;
 		
@@ -34,6 +33,7 @@ public class Prob44_스도쿠_퍼즐 {
 		
 		for(int num = 1; num <= 9; num++) {
 			if(isValid(num, row, col)) {
+
 				result[row][col] = num;
 				
 				if(findSolution()) return true;
